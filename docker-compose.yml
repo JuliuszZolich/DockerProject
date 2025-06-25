@@ -1,0 +1,40 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"  # Tylko frontend dostępny
+    depends_on:
+      - frontend
+
+  frontend:
+    build: ./frontend
+    container_name: react_app
+    expose:
+      - "3000"  # tylko wewnętrznie
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: spring
+    expose:
+      - "8081"
+    depends_on:
+      - redis
+
+  ai:
+    build: ./ai
+    container_name: ai
+    expose:
+      - "4000"
+    depends_on:
+      - backend
+
+  redis:
+    build: ./redis
+    container_name: redis
+    expose:
+      - "6379"
