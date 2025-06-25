@@ -11,7 +11,7 @@ Projekt składa się z aplikacji frontendowej w React, backendu w Spring Boot, s
 dietetyk-plus/
 ├── frontend/            # React (Vite) App
 ├── backend/             # Spring Boot App (Java)
-├── ai/       # Serwer API w Pythonie (FastAPI)
+├── ai/                  # Serwer API w Pythonie (FastAPI)
 ├── nginx/
 │   └── nginx.conf       # Konfiguracja NGINX
 ├── docker-compose.yml   # Docker Compose config
