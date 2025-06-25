@@ -108,8 +108,8 @@ docker-compose up --build
 ## 🐳 Docker Compose – skrót działania
 
 * `frontend`: Vite React App, serwowana przez NGINX
-* `spring_server`: Spring Boot API
-* `python_server`: API w Pythonie (FastAPI / Flask)
+* `spring`: Spring Boot API
+* `ai`: API w Pythonie (FastAPI / Flask)
 * `redis`: baza danych Redis
 * `nginx`: reverse proxy, który udostępnia frontend na zewnątrz
 
@@ -121,14 +121,14 @@ Uruchomienie tylko jednego kontenera do debugowania:
 
 ```bash
 docker-compose up frontend
-docker-compose up spring_server
-docker-compose up python_server
+docker-compose up spring
+docker-compose up ai
 ```
 
 Wejście do środka kontenera:
 
 ```bash
-docker exec -it spring_server sh
+docker exec -it spring sh
 ```
 
 ---
