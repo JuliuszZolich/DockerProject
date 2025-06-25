@@ -24,7 +24,7 @@ dietetyk-plus/
 ## ⚙️ Wymagane zmiany przed uruchomieniem
 
 ### 🔑 1. Python – dodaj klucz API w `main.py`
-##Klucz można pozyskać ze strony [AIStudio](https://aistudio.google.com/apikey)
+## Klucz można pozyskać ze strony [AIStudio](https://aistudio.google.com/apikey)
 W pliku:
 
 ```
