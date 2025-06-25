@@ -33,7 +33,7 @@ ai/main.py
 
 ````
 
-Dodaj np.:
+Dodaj tutaj:
 
 ```python
 API_KEY = "DODAĆ KLUCZ TUTAJ"
@@ -49,7 +49,7 @@ W pliku:
 backend/src/main/resources/application.properties
 ```
 
-Dodaj wymagany klucz (courier)[https://www.courier.com]:
+Dodaj wymagany klucz [courier]([https://www.courier.com):
 
 ```properties
 spring.application.name=Dietetyk_Plus
