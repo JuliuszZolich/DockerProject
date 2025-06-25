@@ -1,0 +1,398 @@
+.creator-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/backgrounds/why_diet_background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden auto;
+    padding-bottom: 100px;
+}
+
+.creator-menu{
+    width: calc(80% - 80px);
+    height: 40px;
+    margin: 100px 10% 50px 10%;
+    float: left;
+    position: relative;
+    background-color: #EFECEC;
+    border: solid 1px #959292;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    padding: 10px 40px;
+}
+
+.creator-menu-select{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.creator-menu-select-placeholder{
+    width: 80%;
+    height: 80%;
+    color: #818181;
+    font-size: 0.7rem;
+    margin-top: 2%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator-menu-select-icon{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.creator-menu-select-icon > img {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ease;
+}
+
+.creator-menu-select-drop-down{
+    width: 80%;
+    margin-left: 15%;
+    height: auto;
+    max-height: 200px;
+    overflow: hidden auto;
+    position: absolute;
+    float: left;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    border-radius: 10px;
+    margin-top: 3px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.creator-menu-select-drop-down.active{
+    visibility: visible;
+}
+
+.creator-menu-select-drop-down.creator{
+    width: 120%;
+    margin-left: 0;
+}
+
+.creator-menu-select-drop-down-item{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    font-size: 0.8rem;
+    color: #484848;
+    transition: background-color, color 0.2s ease;
+    cursor: pointer;
+}
+
+.creator-menu-select-drop-down-item:hover{
+    background-color: #cbc9c9;
+    color: #E24F4F;
+}
+
+.creator-menu-select-icon-active{
+    rotate: 180deg;
+}
+
+.creator-menu-search-bar{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #fafafa;
+    padding: 0 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    color: #484848;
+}
+
+.creator-menu-search-bar:focus{
+    color: #484848;
+    outline: none;
+}
+
+.creator-menu-search-bar:focus::placeholder {
+    color: transparent;
+}
+
+.creator-menu-items{
+    width: 80%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    padding-top: 30px;
+    background-color: #EFECEC;
+    border: solid 1px #959292;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    position: relative;
+}
+
+.creator-menu-add-item{
+    width: 37%;
+    height: 50px;
+    padding-left: 3%;
+    float: left;
+    margin: 0 45% 30px 5%;
+    background-color: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.creator-menu-add-item:hover{
+    border-color: #E24F4F;
+    box-shadow: 0 8px 20px -6px rgb(137, 137, 149);
+}
+
+.creator-menu-add-item-icon{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.creator-menu-add-item-icon > img {
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease;
+}
+
+.creator-menu-add-item-content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #484848;
+    padding-left: 20px;
+    transition: 0.3s ease;
+}
+
+.creator-menu-add-item:hover > .creator-menu-add-item-content{
+    color: #E24F4F;
+}
+
+.creator-menu-add-item:hover > .creator-menu-add-item-icon > img{
+    filter: brightness(0) saturate(100%) invert(48%) sepia(18%) saturate(5886%) hue-rotate(329deg) brightness(91%) contrast(93%);
+}
+
+.unsaved-changes-window-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(6px);
+    z-index: 120;
+}
+
+.unsaved-changes-window{
+    width: 20%;
+    height: 20%;
+    margin: 20% 40%;
+    float: left;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    border-radius: 10px;
+}
+
+.unsaved-changes-window-message{
+    width: 80%;
+    height: 60%;
+    margin: 10px 10%;
+    font-size: 1.2rem;
+    color: #484848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.unsaved-changes-window-button{
+    width: 30%;
+    margin: 0 10% 10px 10%;
+    height: 40px;
+    background-color: red;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 5px -6px rgb(137, 137, 149);
+}
+
+.unsaved-changes-window-button:hover{
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+}
+
+.unsaved-changes-window-button.cancel{
+    background-color: #f44336;
+}
+
+.unsaved-changes-window-button.cancel:hover{
+    background-color: #C02222;
+}
+
+.unsaved-changes-window-button.save{
+    background-color: #64AD56;
+}
+
+.unsaved-changes-window-button.save:hover{
+    background-color: #3d7c2f;
+}
+
+.meal-header.creator{
+    width: 90%;
+    padding-left: 3%;
+    justify-content: left;
+    text-align: left;
+}
+
+.meal.creator{
+    width: 94%;
+    margin-left: 3%;
+}
+
+.meal-title.creator{
+    float: left;
+    justify-content: left;
+    font-size: 1.2rem;
+}
+
+.meal-info-macros.creator-inactive{
+    width: 20%;
+    margin-top: 3px;
+    float: right;
+}
+
+.meal-info-left-side.creator{
+    width: 19%;
+}
+
+.meal-body.creator{
+    margin-top: -40px;
+}
+
+.meal-info-buttons{
+    height: 50px;
+    width: 20%;
+    padding: 0 1% 0 78%;
+    float: left;
+    margin-top: -70px;
+    position: relative;
+
+}
+
+.meal-info-button{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.meal-info-button > img{
+    border-radius: 10px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+}
+
+.meal-info-button.delete > img{
+    background-color: #e53535;
+    transition: background-color 0.2s;
+}
+
+.meal-info-button.delete > img:hover{
+    background-color: #c50a0a;
+    box-shadow: 0 8px 15px -6px rgb(137, 137, 149);
+}
+
+.meal-info-button.edit > img{
+    background-color: #6a98da;
+    transition: background-color 0.2s;
+}
+
+.meal-info-button.edit > img:hover{
+    background-color: #3c6fb2;
+    box-shadow: 0 8px 15px -6px rgb(137, 137, 149);
+}
+
+.diet-item{
+    width: 96%;
+    margin-left: 2%;
+    height: auto;
+    position: relative;
+    float: left;
+    transition: height 0.3s ease;
+    background-color: #FAFAFA;
+    box-shadow: 0 8px 10px -6px rgb(137, 137, 149);
+    border-radius: 30px;
+    opacity: 100%;
+    margin-bottom: 30px;
+}
+
+.diet-item-title{
+    font-size: 2rem;
+    float: left;
+    width: 90%;
+    padding: 20px 5%;
+    color: #484848;
+}
+
+.diet-item-description{
+    width: 80%;
+    padding: 10px 3% 0;
+    float: left;
+    color: #484848;
+    font-size: 0.9rem;
+}
+
+.diet-item-buttons{
+    width: 96%;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.meal-info-button.diet-plan > img{
+    transition: background-color 0.2s;
+}
+
+.meal-info-button.diet-plan > img{
+    background-color: rgba(183, 183, 183, 0.9);
+}
+
+.meal-info-button.diet-plan:hover > img{
+    background-color: rgba(131, 130, 130, 0.9);
+}
