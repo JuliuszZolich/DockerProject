@@ -49,7 +49,7 @@ W pliku:
 backend/src/main/resources/application.properties
 ```
 
-Dodaj wymagany klucz [courier]([https://www.courier.com):
+Dodaj wymagany klucz [courier](https://www.courier.com):
 
 ```properties
 spring.application.name=Dietetyk_Plus
@@ -109,7 +109,7 @@ docker-compose up --build
 
 * `frontend`: Vite React App, serwowana przez NGINX
 * `spring`: Spring Boot API
-* `ai`: API w Pythonie (FastAPI / Flask)
+* `ai`: API w Pythonie (FastAPI)
 * `redis`: baza danych Redis
 * `nginx`: reverse proxy, który udostępnia frontend na zewnątrz
 
