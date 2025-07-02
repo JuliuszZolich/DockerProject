@@ -132,9 +132,3 @@ docker exec -it spring sh
 ```
 
 ---
-
-## 📫 Kontakt / rozwój
-
-Możesz rozwijać projekt dodając autoryzację, system użytkowników, zapisy do bazy danych i połączenia z zewnętrznymi usługami.
-
----
